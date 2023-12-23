@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benutzer Erstellen</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <form>
+        <label for="username">Bitte Schreiben Sie Ihren Namen</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="level">Auf welchem Level schützen Sie sich selbst ein?</label>
+        <select id="level" name="level">
+            <option value="Anfänger">Anfänger</option>
+            <option value="Fortgeschritten">Fortgeschritten</option>
+            <option value="Profi">Profi</option>
+        </select>
+
+        <button type="button" onclick="weiter()">weiter</button>
+    </form>
+
+    <script>
+        function weiter() {
+            var username = document.getElementById('username').value;
+            var level = document.getElementById('level').value;
+
+            // Hier können Sie JavaScript verwenden, um die Daten zu verarbeiten oder an den Server zu senden.
+            console.log(username + ', ' + level);
+        }
+    </script>
+</body>
+</html>
+
+
